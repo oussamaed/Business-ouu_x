@@ -8,68 +8,112 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: #000; /* خلفية سوداء */
+            background: linear-gradient(120deg, #000, #111);
             color: gold;
             text-align: center;
             overflow-x: hidden;
         }
+        
         .logo {
-            width: 200px;
-            margin-top: 20px;
+            width: 180px;
+            margin-top: 30px;
+            animation: float 3s ease-in-out infinite;
         }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
         h1 {
             margin-top: 20px;
-            font-size: 2em;
+            font-size: 2.2em;
+            letter-spacing: 2px;
         }
-        p {
-            font-size: 1.2em;
-            margin: 10px 20px;
+
+        .wave {
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            bottom: 0;
+            left: 0;
+            background: url('https://i.ibb.co/rb7p9mF/wave.png');
+            background-size: cover;
+            animation: wave 10s linear infinite;
+            opacity: 0.2;
         }
+
+        @keyframes wave {
+            0% { background-position-x: 0; }
+            100% { background-position-x: 1000px; }
+        }
+
+        .services {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 20px;
+        }
+
+        .card {
+            background: #111;
+            border: 2px solid gold;
+            border-radius: 20px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 0 20px gold;
+        }
+
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 0;
+            padding: 12px 25px;
+            margin: 30px 0;
             background: gold;
             color: black;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             font-weight: bold;
+            box-shadow: 0 0 15px gold;
+            transition: transform 0.3s;
         }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
         .note {
             font-size: 0.9em;
-            margin-top: 50px;
+            margin: 40px 20px;
             color: gray;
         }
-        .code-bg {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            opacity: 0.05;
-            background-image: url('https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif');
-            background-size: cover;
-            z-index: -1;
+
+        @media (min-width: 600px) {
+            .services { flex-direction: row; justify-content: center; }
         }
+
     </style>
 </head>
 <body>
 
-    <!-- خلفية الكود -->
-    <div class="code-bg"></div>
-
-    <!-- الشعار -->
     <img src="logo.png" alt="Logo" class="logo">
 
-    <!-- العنوان -->
     <h1>Welcome to ouu_x Portfolio</h1>
 
-    <!-- النص -->
-    <p>I specialize in Montage, Photo Editing, and Logo Design. Let's create something amazing together!</p>
+    <div class="services">
+        <div class="card">🎬 Montage Editing</div>
+        <div class="card">🖼️ Photo Retouching</div>
+        <div class="card">🎨 Logo Design</div>
+    </div>
 
-    <!-- زر سناب -->
     <a href="https://www.snapchat.com/add/oux_x1?share_id=_A7yA5avjJ0&locale=en-US" class="btn" target="_blank">Contact Me on Snapchat</a>
 
-    <!-- ملاحظة -->
     <p class="note">* If the manager does not respond, it means the subscription limit has been reached.</p>
+
+    <div class="wave"></div>
 
 </body>
 </html>
