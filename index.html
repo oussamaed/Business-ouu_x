@@ -3,81 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ouu_x | Portfolio</title>
+  <title>ouu_x - Mastering Websites & Ethical Hacking</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: black;
+      background-color: #1e1e1e; /* رمادي غامق أنيق */
       color: gold;
       text-align: center;
     }
-    header img {
-      width: 150px;
-      margin-top: 20px;
-      animation: float 2s ease-in-out infinite;
+    header {
+      padding: 50px 20px 20px;
     }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: gold;
     }
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
+    p.description {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #d4af37; /* ذهبية أهدى */
     }
-    .card {
-      background: rgba(255, 215, 0, 0.1);
-      border: 1px solid gold;
-      border-radius: 10px;
-      padding: 20px;
-      transition: 0.3s;
-    }
-    .card:hover {
-      background: gold;
-      color: black;
-      transform: scale(1.05);
-    }
-    .snap-button {
+    .btn-snap {
       display: inline-block;
-      margin: 20px;
-      padding: 10px 20px;
+      margin-top: 30px;
+      padding: 15px 25px;
       background: gold;
-      color: black;
+      color: #1e1e1e;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
+      border-radius: 30px;
       transition: 0.3s;
     }
-    .snap-button:hover {
-      background: white;
+    .btn-snap:hover {
+      background: #d4af37;
     }
-    .wave {
+    .note {
       margin-top: 50px;
+      font-size: 0.9em;
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo">
-    <h1>Welcome to ouu_x Portfolio</h1>
+    <h1>Mastering Websites, Programming & Ethical Hacking</h1>
+    <p class="description">Building digital power while helping you stay safe online.</p>
+    <a href="https://www.snapchat.com/add/oux_x1?share_id=_A7yA5avjJ0&locale=en-US" class="btn-snap" target="_blank">Contact me on Snapchat</a>
+    <p class="note">Note: Due to high demand, responses might take some time. Thanks for your patience!</p>
   </header>
-
-  <div class="cards">
-    <div class="card">Photo Editing & Retouch</div>
-    <div class="card">Logo & Branding Design</div>
-    <div class="card">Video Montage & Effects</div>
-  </div>
-
-  <a class="snap-button" href="https://www.snapchat.com/add/oux_x1?share_id=_A7yA5avjJ0&locale=en-US" target="_blank">Contact on Snapchat</a>
-
-  <svg class="wave" viewBox="0 0 1440 320"><path fill="gold" fill-opacity="0.3" d="M0,96L48,122.7C96,149,192,203,288,224C384,245,480,235,576,202.7C672,171,768,117,864,122.7C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-
-  <p>Thank you for visiting! If you can't reach us, it means the subscription has reached its maximum limit.</p>
 
 </body>
 </html>
