@@ -3,81 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mastering Websites, Programming & Ethical Hacking</title>
+  <title>ouu_x Portfolio</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #1e1e1e; /* Dark gray */
-      color: gold;
+      background: #1c1c1c url('https://www.transparenttextures.com/patterns/cubes.png');
+      color: white;
       text-align: center;
     }
     header {
-      padding: 50px 20px 20px;
+      padding: 20px;
+    }
+    img.logo {
+      width: 100px;
+      margin-bottom: 10px;
     }
     h1 {
-      font-size: 2.5em;
-      margin: 0;
+      font-size: 24px;
       color: gold;
-    }
-    p.description {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #d4af37; /* Gold light */
-    }
-    .btn-snap {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 25px;
-      background: gold;
-      color: #1e1e1e;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 30px;
-      transition: 0.3s;
-    }
-    .btn-snap:hover {
-      background: #d4af37;
-    }
-    .services {
-      margin-top: 50px;
-      text-align: left;
-      font-size: 1.1em;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-    .services ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .services li {
       margin: 10px 0;
     }
-    .note {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #aaaaaa;
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .service {
+      background: rgba(255, 215, 0, 0.1);
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service:hover {
+      transform: rotateY(10deg) scale(1.05);
+      box-shadow: 0 0 20px gold;
+    }
+    a {
+      color: gold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    footer {
+      margin: 30px 0;
+      color: #aaa;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo.png" alt="Logo" class="logo">
     <h1>Mastering Websites, Programming & Ethical Hacking</h1>
-    <p class="description">Building digital power while helping you stay safe online.</p>
-    <a href="https://www.snapchat.com/add/oux_x1?share_id=_A7yA5avjJ0&locale=en-US" class="btn-snap" target="_blank">Contact me on Snapchat</a>
   </header>
 
   <div class="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Website Creation</li>
-      <li>Programming</li>
-      <li>Social Account Recovery</li>
-      <li>Tips for Staying Safe Online</li>
-    </ul>
+    <div class="service">Website Creation & Programming</div>
+    <div class="service">Help Secure Your Digital Life</div>
+    <div class="service">Ethical Hacking Advice</div>
   </div>
+
+  <a href="https://www.snapchat.com/add/oux_x1?share_id=_A7yA5avjJ0&locale=en-US" target="_blank">Contact me on Snapchat</a>
+
+  <footer>
+    &copy; 2025 ouu_x. All rights reserved.
+  </footer>
 
 </body>
 </html>
