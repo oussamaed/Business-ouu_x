@@ -1,86 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business ouu_x</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #FFD700;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px #FFD700;
-    }
-
-    .btn {
-      padding: 15px 30px;
-      font-size: 1.2em;
-      color: #000;
-      background-color: #FFD700;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 20px #FFD700;
-    }
-
-    .logo {
-      width: 200px;  /* تحديد عرض الشعار */
-      margin-top: 20px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-top: 20px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-      .btn {
-        font-size: 1em;
-        padding: 12px 25px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouu_x Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #000; /* خلفية سوداء */
+            color: gold;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .logo {
+            width: 200px;
+            margin-top: 20px;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background: gold;
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        .note {
+            font-size: 0.9em;
+            margin-top: 50px;
+            color: gray;
+        }
+        .code-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            opacity: 0.05;
+            background-image: url('https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif');
+            background-size: cover;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- الشعار في أعلى الصفحة -->
-  <img src="A_logo_features_the_brand_name_'ouu_x'_in_black,_c.png" alt="Logo" class="logo">
+    <!-- خلفية الكود -->
+    <div class="code-bg"></div>
 
-  <h1>Welcome to My Portfolio</h1>
+    <!-- الشعار -->
+    <img src="logo.png" alt="Logo" class="logo">
 
-  <p>Specialized in Montage & Photo Editing</p>
+    <!-- العنوان -->
+    <h1>Welcome to ouu_x Portfolio</h1>
 
-  <a class="btn" href="https://www.snapchat.com/add/oux_x1?share_id=_A7yA5avjJ0&locale=en-US" target="_blank">
-    Add me on Snapchat
-  </a>
+    <!-- النص -->
+    <p>I specialize in Montage, Photo Editing, and Logo Design. Let's create something amazing together!</p>
 
-  <p>Thank you for visiting my portfolio! I hope you enjoy my work. Feel free to reach out for collaborations or inquiries!</p>
+    <!-- زر سناب -->
+    <a href="https://www.snapchat.com/add/oux_x1?share_id=_A7yA5avjJ0&locale=en-US" class="btn" target="_blank">Contact Me on Snapchat</a>
 
-  <p style="font-size: 1em; color: #FFD700; margin-top: 20px;">
-    Note: If the administrator hasn't contacted you, it means the subscription limit has been reached.
-  </p>
+    <!-- ملاحظة -->
+    <p class="note">* If the manager does not respond, it means the subscription limit has been reached.</p>
 
 </body>
 </html>
